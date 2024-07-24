@@ -72,4 +72,20 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_application_subnet_ids"></a> [application\_subnet\_ids](#output\_application\_subnet\_ids) | Application subnet IDs |
+| <a name="output_application_subnets_cidr"></a> [application\_subnets\_cidr](#output\_application\_subnets\_cidr) | Application subnet CIDR |
+| <a name="output_compliance_subnet_ids"></a> [compliance\_subnet\_ids](#output\_compliance\_subnet\_ids) | Compliance subnet IDs |
+| <a name="output_compliance_subnets_cidr"></a> [compliance\_subnets\_cidr](#output\_compliance\_subnets\_cidr) | Compliance subnet CIDR |
+| <a name="output_nat_application_addresses"></a> [nat\_application\_addresses](#output\_nat\_application\_addresses) | NAT application addresses |
+| <a name="output_nat_general_addresses"></a> [nat\_general\_addresses](#output\_nat\_general\_addresses) | NAT general addresses |
+| <a name="output_private_dns_name"></a> [private\_dns\_name](#output\_private\_dns\_name) | private DNS name |
+| <a name="output_public_subnet_ids"></a> [public\_subnet\_ids](#output\_public\_subnet\_ids) | Public subnet IDs |
+| <a name="output_public_subnets_cidr"></a> [public\_subnets\_cidr](#output\_public\_subnets\_cidr) | Public subnet CIDR |
+| <a name="output_stateful_subnet_ids"></a> [stateful\_subnet\_ids](#output\_stateful\_subnet\_ids) | Stateful subnet IDs |
+| <a name="output_stateful_subnets_cidr"></a> [stateful\_subnets\_cidr](#output\_stateful\_subnets\_cidr) | Stateful subnet CIDR |
+| <a name="output_utility_subnet_ids"></a> [utility\_subnet\_ids](#output\_utility\_subnet\_ids) | Utility subnet IDs |
+| <a name="output_utility_subnets_cidr"></a> [utility\_subnets\_cidr](#output\_utility\_subnets\_cidr) | Utility subnet CIDR |
+| <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | VPC id |
+| <a name="output_vpc_name"></a> [vpc\_name](#output\_vpc\_name) | VPC name |

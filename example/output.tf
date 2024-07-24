@@ -62,3 +62,13 @@ output "public_subnets_cidr" {
   description = "Public subnet CIDR"
   value       = module.alibaba_vpc.public_subnets_cidr
 }
+
+output "nat_general_addresses" {
+  description = "NAT general addresses"
+  value       = module.alibaba_vpc.nat_general_addresses
+}
+
+output "nat_application_addresses" {
+  description = "NAT application addresses"
+  value       = module.alibaba_vpc.nat_application_addresses
+}

@@ -62,3 +62,13 @@ output "public_subnets_cidr" {
   description = "Public subnet CIDR"
   value       = values(alicloud_vswitch.public_subnets).*.cidr_block
 }
+
+output "nat_general_addresses" {
+  description = "NAT general addresses"
+  value       = values(alicloud_eip_address.general_nat_ip).*.ip_address
+}
+
+output "nat_application_addresses" {
+  description = "NAT application addresses"
+  value       = values(alicloud_eip_address.application_nat_ip).*.ip_address
+}
