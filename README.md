@@ -26,6 +26,11 @@ No modules.
 | [alicloud_nat_gateway.general_nat](https://registry.terraform.io/providers/aliyun/alicloud/1.220.1/docs/resources/nat_gateway) | resource |
 | [alicloud_pvtz_zone.private_zone](https://registry.terraform.io/providers/aliyun/alicloud/1.220.1/docs/resources/pvtz_zone) | resource |
 | [alicloud_pvtz_zone_attachment.zone_attachment](https://registry.terraform.io/providers/aliyun/alicloud/1.220.1/docs/resources/pvtz_zone_attachment) | resource |
+| [alicloud_route_entry.application](https://registry.terraform.io/providers/aliyun/alicloud/1.220.1/docs/resources/route_entry) | resource |
+| [alicloud_route_entry.compliance](https://registry.terraform.io/providers/aliyun/alicloud/1.220.1/docs/resources/route_entry) | resource |
+| [alicloud_route_entry.public](https://registry.terraform.io/providers/aliyun/alicloud/1.220.1/docs/resources/route_entry) | resource |
+| [alicloud_route_entry.stateful](https://registry.terraform.io/providers/aliyun/alicloud/1.220.1/docs/resources/route_entry) | resource |
+| [alicloud_route_entry.utility](https://registry.terraform.io/providers/aliyun/alicloud/1.220.1/docs/resources/route_entry) | resource |
 | [alicloud_route_table.application](https://registry.terraform.io/providers/aliyun/alicloud/1.220.1/docs/resources/route_table) | resource |
 | [alicloud_route_table.compliance](https://registry.terraform.io/providers/aliyun/alicloud/1.220.1/docs/resources/route_table) | resource |
 | [alicloud_route_table.public](https://registry.terraform.io/providers/aliyun/alicloud/1.220.1/docs/resources/route_table) | resource |

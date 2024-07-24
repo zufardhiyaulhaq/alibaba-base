@@ -269,6 +269,41 @@ resource "alicloud_snat_entry" "application_snat_entry" {
   snat_ip       = join(",", values(alicloud_eip_address.application_nat_ip).*.ip_address)
 }
 
+resource "alicloud_route_entry" "utility" {
+  route_table_id        = alicloud_route_table.utility.id
+  destination_cidrblock = "0.0.0.0/0"
+  nexthop_type          = "NatGateway"
+  nexthop_id            = alicloud_nat_gateway.general_nat.id
+}
+
+resource "alicloud_route_entry" "public" {
+  route_table_id        = alicloud_route_table.public.id
+  destination_cidrblock = "0.0.0.0/0"
+  nexthop_type          = "NatGateway"
+  nexthop_id            = alicloud_nat_gateway.general_nat.id
+}
+
+resource "alicloud_route_entry" "stateful" {
+  route_table_id        = alicloud_route_table.stateful.id
+  destination_cidrblock = "0.0.0.0/0"
+  nexthop_type          = "NatGateway"
+  nexthop_id            = alicloud_nat_gateway.general_nat.id
+}
+
+resource "alicloud_route_entry" "compliance" {
+  route_table_id        = alicloud_route_table.compliance.id
+  destination_cidrblock = "0.0.0.0/0"
+  nexthop_type          = "NatGateway"
+  nexthop_id            = alicloud_nat_gateway.general_nat.id
+}
+
+resource "alicloud_route_entry" "application" {
+  route_table_id        = alicloud_route_table.application.id
+  destination_cidrblock = "0.0.0.0/0"
+  nexthop_type          = "NatGateway"
+  nexthop_id            = alicloud_nat_gateway.application_nat.id
+}
+
 resource "alicloud_pvtz_zone" "private_zone" {
   zone_name = "${var.vpc_name}.internal.io"
 
