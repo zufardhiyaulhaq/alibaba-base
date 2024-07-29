@@ -1,6 +1,6 @@
 output "vpc_name" {
   description = "VPC name"
-  value       = alicloud_vpc.vpc.name
+  value       = alicloud_vpc.vpc.vpc_name
 }
 
 output "vpc_id" {
