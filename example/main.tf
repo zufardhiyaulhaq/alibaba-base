@@ -168,7 +168,7 @@ module "alibaba_network_acl" {
       protocol       = "tcp"
       port           = "6443/6443"
       source_cidr_ip = "0.0.0.0/0"
-    }
+    },
   }
 
   additional_ingress_public_rules = {
@@ -177,24 +177,9 @@ module "alibaba_network_acl" {
       protocol       = "tcp"
       port           = "6443/6443"
       source_cidr_ip = "0.0.0.0/0"
-    }
+    },
   }
 
-  additional_ingress_stateful_rules = {
-    "temp-allow-6443-from-public" = {
-      policy         = "accept"
-      protocol       = "tcp"
-      port           = "6443/6443"
-      source_cidr_ip = "0.0.0.0/0"
-    }
-  }
-
-  additional_ingress_compliance_rules = {
-    "temp-allow-6443-from-public" = {
-      policy         = "accept"
-      protocol       = "tcp"
-      port           = "6443/6443"
-      source_cidr_ip = "0.0.0.0/0"
-    }
-  }
+  additional_ingress_stateful_rules = {}
+  additional_ingress_compliance_rules = {}
 }
