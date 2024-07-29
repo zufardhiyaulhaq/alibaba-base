@@ -155,45 +155,45 @@ module "alibaba_network_acl" {
 
   additional_ingress_application_rules = {
     "temp-allow-6443-from-public" = {
-      policy = "accept"
-      protocol = "tcp"
-      port = "6443"
+      policy         = "accept"
+      protocol       = "tcp"
+      port           = "6443/6443"
       source_cidr_ip = "0.0.0.0/0"
-    }
+    },
   }
 
   additional_ingress_utility_rules = {
     "temp-allow-6443-from-public" = {
-      policy = "accept"
-      protocol = "tcp"
-      port = "6443"
+      policy         = "accept"
+      protocol       = "tcp"
+      port           = "6443/6443"
       source_cidr_ip = "0.0.0.0/0"
     }
   }
 
   additional_ingress_public_rules = {
     "temp-allow-6443-from-public" = {
-      policy = "accept"
-      protocol = "tcp"
-      port = "6443"
+      policy         = "accept"
+      protocol       = "tcp"
+      port           = "6443/6443"
       source_cidr_ip = "0.0.0.0/0"
     }
   }
 
   additional_ingress_stateful_rules = {
     "temp-allow-6443-from-public" = {
-      policy = "accept"
-      protocol = "tcp"
-      port = "6443"
+      policy         = "accept"
+      protocol       = "tcp"
+      port           = "6443/6443"
       source_cidr_ip = "0.0.0.0/0"
     }
   }
 
   additional_ingress_compliance_rules = {
     "temp-allow-6443-from-public" = {
-      policy = "accept"
-      protocol = "tcp"
-      port = "6443"
+      policy         = "accept"
+      protocol       = "tcp"
+      port           = "6443/6443"
       source_cidr_ip = "0.0.0.0/0"
     }
   }
