@@ -76,8 +76,8 @@ module "alibaba_vpc" {
   }
   compliance_subnets = {}
 
-  general_nat_subnet_location     = "utility-vm-a"
-  application_nat_subnet_location = "utility-vm-a"
+  general_nat_subnet_location     = "public-vm-a"
+  application_nat_subnet_location = "public-vm-a"
 
   general_nat_ip = {
     "general-nat-ip-01" = {},
